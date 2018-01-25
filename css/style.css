@@ -8,14 +8,16 @@ Dark green: #28b485
 */
 
 /* RESET */
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px; /* Now we know root font size in 10px */
+    font-size: 62.5%; /* Now we know root font size is 10px, based off the browser default  */
     
 }
 
@@ -27,6 +29,7 @@ body {
     line-height: 1.7;
     color: #777777; 
     padding: 3rem;
+    box-sizing: border-box;   
 }
 
 .header{
@@ -143,6 +146,7 @@ body {
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 }
 
 .btn:hover{
