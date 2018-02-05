@@ -1,1 +1,3 @@
 "# natours" 
+npm run compile:sass
+live-server
